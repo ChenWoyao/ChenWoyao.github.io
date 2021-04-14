@@ -53,17 +53,6 @@
     
     
     <entry>
-      <title>markdown使用教程</title>
-      <link href="markdownGrammer/index.html"/>
-      <url>markdownGrammer/index.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>幻灯片</title>
       <link href="slides/index.html"/>
       <url>slides/index.html</url>
@@ -78,6 +67,17 @@
       <title>标签</title>
       <link href="tags/index.html"/>
       <url>tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>项目实战</title>
+      <link href="projects/index.html"/>
+      <url>projects/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
