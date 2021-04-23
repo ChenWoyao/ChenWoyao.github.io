@@ -4,26 +4,25 @@
   
     
     <entry>
-      <title>字符串</title>
-      <link href="2021/04/23/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
-      <url>2021/04/23/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>栈和队列</title>
-      <link href="2021/04/23/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/"/>
-      <url>2021/04/23/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -31,12 +30,24 @@
     
     <entry>
       <title>数组和堆</title>
-      <link href="2021/04/23/%E6%95%B0%E7%BB%84%E5%92%8C%E5%A0%86/"/>
-      <url>2021/04/23/%E6%95%B0%E7%BB%84%E5%92%8C%E5%A0%86/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%95%B0%E7%BB%84%E5%92%8C%E5%A0%86/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%95%B0%E7%BB%84%E5%92%8C%E5%A0%86/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -44,12 +55,24 @@
     
     <entry>
       <title>树</title>
-      <link href="2021/04/23/%E6%A0%91/"/>
-      <url>2021/04/23/%E6%A0%91/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%A0%91/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%A0%91/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -57,12 +80,24 @@
     
     <entry>
       <title>排序</title>
-      <link href="2021/04/23/%E6%8E%92%E5%BA%8F/"/>
-      <url>2021/04/23/%E6%8E%92%E5%BA%8F/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -70,12 +105,24 @@
     
     <entry>
       <title>链表</title>
-      <link href="2021/04/23/%E9%93%BE%E8%A1%A8/"/>
-      <url>2021/04/23/%E9%93%BE%E8%A1%A8/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E9%93%BE%E8%A1%A8/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E9%93%BE%E8%A1%A8/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -83,12 +130,24 @@
     
     <entry>
       <title>回溯</title>
-      <link href="2021/04/23/%E5%9B%9E%E6%BA%AF/"/>
-      <url>2021/04/23/%E5%9B%9E%E6%BA%AF/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -96,12 +155,24 @@
     
     <entry>
       <title>滑动窗口与双指针</title>
-      <link href="2021/04/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E4%B8%8E%E5%8F%8C%E6%8C%87%E9%92%88/"/>
-      <url>2021/04/23/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E4%B8%8E%E5%8F%8C%E6%8C%87%E9%92%88/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E4%B8%8E%E5%8F%8C%E6%8C%87%E9%92%88/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E4%B8%8E%E5%8F%8C%E6%8C%87%E9%92%88/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -109,12 +180,24 @@
     
     <entry>
       <title>哈希表</title>
-      <link href="2021/04/23/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
-      <url>2021/04/23/%E5%93%88%E5%B8%8C%E8%A1%A8/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%93%88%E5%B8%8C%E8%A1%A8/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -122,12 +205,24 @@
     
     <entry>
       <title>分治法</title>
-      <link href="2021/04/23/%E5%88%86%E6%B2%BB%E6%B3%95/"/>
-      <url>2021/04/23/%E5%88%86%E6%B2%BB%E6%B3%95/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%88%86%E6%B2%BB%E6%B3%95/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%88%86%E6%B2%BB%E6%B3%95/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -135,12 +230,24 @@
     
     <entry>
       <title>二分查找</title>
-      <link href="2021/04/23/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
-      <url>2021/04/23/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -148,12 +255,24 @@
     
     <entry>
       <title>动态规划</title>
-      <link href="2021/04/23/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-      <url>2021/04/23/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -511,31 +630,6 @@
     
     
     <entry>
-      <title>回溯算法系列</title>
-      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%97/"/>
-      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E7%B3%BB%E5%88%97/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法和数据结构 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 算法和数据结构 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>八大排序算法实现</title>
       <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/"/>
       <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E5%AE%9E%E7%8E%B0/</url>
@@ -566,6 +660,31 @@
       <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3/</url>
       
         <content type="html"><![CDATA[<h1 id="滑动窗口，"><a href="#滑动窗口，" class="headerlink" title="滑动窗口，"></a>滑动窗口，</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">常用在数组和字符串的操作上面。</span><br><span class="line">可以用来解决一些查找满足一定条件的连续区间的性质（长度等）的问题。由于区间连续(单调递增或者单调递减)</span><br><span class="line">因此当区间发生变化时，可以通过旧有的计算结果对搜索空间进行剪枝，这样便减少了重复计算，降低了时间复杂度。</span><br><span class="line">往往类似于“ 请找到满足 xx 的最 x 的区间（子串、子数组）的 xx ”</span><br></pre></td></tr></table></figure><h1 id="动态规划，"><a href="#动态规划，" class="headerlink" title="动态规划，"></a>动态规划，</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">是一种暴力方法，下一步的操作时通过上一步的某条件达到的。</span><br><span class="line">写出表达式和约束条件即可达到目的</span><br><span class="line">动态规划一般会超出时间限制，如果是dp就生成一维数组，如果是dp[i][j]就生成二维数组。</span><br><span class="line">反正就是个多维数组保存每一种情况下的办法。</span><br></pre></td></tr></table></figure><h1 id="分治法"><a href="#分治法" class="headerlink" title="分治法"></a>分治法</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一个问题可以拆成两个或多个“相似”的小问题，就一定要用分治法。</span><br><span class="line">因为小问题可以拆到简单的直接求解</span><br></pre></td></tr></table></figure><h1 id="回朔法，深度遍历dfs"><a href="#回朔法，深度遍历dfs" class="headerlink" title="回朔法，深度遍历dfs"></a>回朔法，深度遍历dfs</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">是一种暴力方法</span><br><span class="line">试探性一步一步的看能否到达终点。</span><br><span class="line">如果当前的方法可行满足约束条件，且下一步操作也可行。就往下走</span><br><span class="line">如果下一步是死路就不往下一步走，悔棋，更换当前的可行方法是自己满足约束条件</span><br></pre></td></tr></table></figure><h1 id="单调栈"><a href="#单调栈" class="headerlink" title="单调栈"></a>单调栈</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">维护一个单调递增或者单调递减的栈。如果是递减栈，遇到一个比栈顶元素还要小的元素，</span><br><span class="line">就一直推出元素直到这个元素作为栈顶元素时依旧是一个递减栈。</span><br><span class="line">通常用这种数据结构解决一种公共区间内最大或最小值。</span><br><span class="line">比如木板长短不一怎样能打最多的水,柱状图的最大矩形。</span><br></pre></td></tr></table></figure><h1 id="二分法"><a href="#二分法" class="headerlink" title="二分法"></a>二分法</h1>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">一种搜索方法，在一种具有单调性的队列中，快速搜索目标</span><br></pre></td></tr></table></figure><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><ol><li>如果遇到必须用暴力的算法来解决的问题，一般都会用一个栈来进行维护减少重复操作。<br>就比如回朔法，给之前走过的可行步骤做一个存储，如果下一步骤可行的操作在存储里存在<br>就调用存储的方法</li><li>能用dp算法的一般也能用回朔法。如果当前可选择的方法量比较少推荐用回溯</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法和数据结构 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法和数据结构 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>字符串</title>
+      <link href="2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <url>2021/04/23/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
       
       <categories>
