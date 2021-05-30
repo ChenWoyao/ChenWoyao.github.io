@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="浏览器的相关知识"><meta name="keywords" content="前端笔记"><meta name="author" content="woyao"><meta name="copyright" content="woyao"><title>浏览器的相关知识 | woyao的博客</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '5.4.0'
+} </script><meta name="generator" content="Hexo 5.4.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E7%9A%84%E8%AF%9D%E6%98%AF%E8%BF%99%E6%A0%B7"><span class="toc-number">1.</span> <span class="toc-text">总结的话是这样</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">移动端：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%EF%BC%9A"><span class="toc-number">1.2.</span> <span class="toc-text">图片：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#javascript"><span class="toc-number">1.3.</span> <span class="toc-text">javascript:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">1.4.</span> <span class="toc-text">css:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E5%86%85%E5%AE%B9%EF%BC%9A"><span class="toc-number">1.5.</span> <span class="toc-text">页面内容：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">1.6.</span> <span class="toc-text">服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cookie"><span class="toc-number">1.7.</span> <span class="toc-text">cookie</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E9%9D%A2%E6%98%AF%E4%B8%80%E4%BA%9B%E5%85%B7%E4%BD%93%E7%9A%84%E6%8E%AA%E6%96%BD"><span class="toc-number">2.</span> <span class="toc-text">下面是一些具体的措施:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%BD%E5%8F%AF%E8%83%BD%E5%87%8F%E5%B0%91HTTP%E8%AF%B7%E6%B1%82"><span class="toc-number">2.1.</span> <span class="toc-text">尽可能减少HTTP请求:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8cdn%EF%BC%88%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%E7%BD%91%E7%BB%9C%EF%BC%89"><span class="toc-number">2.2.</span> <span class="toc-text">使用cdn（内容分发网络）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0expire-cache-control%E5%A4%B4"><span class="toc-number">2.3.</span> <span class="toc-text">添加expire&#x2F;cache-control头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E7%94%A8gzip%E5%8E%8B%E7%BC%A9"><span class="toc-number">2.4.</span> <span class="toc-text">启用gzip压缩</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86css%E6%94%BE%E5%9C%A8%E9%A1%B5%E9%9D%A2%E6%9C%80%E4%B8%8A%E9%9D%A2"><span class="toc-number">2.5.</span> <span class="toc-text">将css放在页面最上面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B0%86script%E6%94%BE%E5%9C%A8%E9%A1%B5%E9%9D%A2%E6%9C%80%E4%B8%8B%E9%9D%A2"><span class="toc-number">2.6.</span> <span class="toc-text">将script放在页面最下面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%BF%E5%85%8D%E5%9C%A8css%E4%B8%AD%E4%BD%BF%E7%94%A8expression"><span class="toc-number">2.7.</span> <span class="toc-text">避免在css中使用expression</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%8AJavaScript%E5%92%8Ccss%E6%94%BE%E5%9C%A8%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E4%B8%AD"><span class="toc-number">2.8.</span> <span class="toc-text">把JavaScript和css放在外部文件中</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8F%E5%B0%91dns%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.9.</span> <span class="toc-text">减少dns查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8E%8B%E7%BC%A9JavaScript%E5%92%8Ccss"><span class="toc-number">2.10.</span> <span class="toc-text">压缩JavaScript和css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%81%BF%E5%85%8D%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">2.11.</span> <span class="toc-text">避免重定向</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E7%9A%84%E8%84%9A%E6%9C%AC"><span class="toc-number">2.12.</span> <span class="toc-text">移除重复的脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E5%AE%9E%E4%BD%93%E6%A0%87%E7%AD%BE"><span class="toc-number">2.13.</span> <span class="toc-text">配置实体标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8ajax%E7%BC%93%E5%AD%98"><span class="toc-number">2.14.</span> <span class="toc-text">使用ajax缓存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8F%E5%B0%91dom%E6%93%8D%E4%BD%9C"><span class="toc-number">2.15.</span> <span class="toc-text">减少dom操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%8F%E5%B0%91%E9%87%8D%E6%8E%92"><span class="toc-number">2.16.</span> <span class="toc-text">减少重排</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dns%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="toc-number">2.17.</span> <span class="toc-text">dns预解析</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://0.gravatar.com/avatar/0e261cd9b93afcd1c13b39d5ba7d6e2d"></div><div class="author-info__name text-center">woyao</div><div class="author-info__description text-center">分享，交流，学习，成长</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/ChenWoyao">follow me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">48</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">12</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">8</span></a></div></div></div><div id="content-outer"><div class="plain" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">woyao的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/categories">目录</a><a class="site-page" href="/archives">文章总览</a><a class="site-page" href="/projects">项目实战</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/about">关于作者</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div></div><div class="layout" id="content-inner"><article id="post"><div class="plain" id="post-title">浏览器的相关知识</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2021-05-30</time><span class="post-meta__separator">|</span><i class="fa fa-inbox" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/"> 前端笔记</a><span class="post-meta__separator">|</span><span class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">1.6k</span><span class="post-meta__separator">|</span><span>阅读时长: 5 分钟</span></span></div><div class="article-container" id="post-content"><h2 id="总结的话是这样"><a href="#总结的话是这样" class="headerlink" title="总结的话是这样"></a>总结的话是这样</h2><h3 id="移动端："><a href="#移动端：" class="headerlink" title="移动端："></a>移动端：</h3><pre><code>保持单个文件小于 25kb
+打包内容为分段multipart文档
+</code></pre>
+<h3 id="图片："><a href="#图片：" class="headerlink" title="图片："></a>图片：</h3><pre><code>优化图片
+优化css sprite
+不要再html中放缩放图片
+使用体积小，可以缓存的favicon.ico
+</code></pre>
+<h3 id="javascript"><a href="#javascript" class="headerlink" title="javascript:"></a>javascript:</h3><pre><code>把脚本放在页面底部
+使用外部JavaScript和css
+压缩js和css
+移除重复脚本
+减少dom操作
+使用高效的事件处理
+</code></pre>
+<h3 id="css"><a href="#css" class="headerlink" title="css:"></a>css:</h3><pre><code>不要把样式表放在head中
+不要使用css表达式
+使用link代替@import
+不要使用filter
+</code></pre>
+<h3 id="页面内容："><a href="#页面内容：" class="headerlink" title="页面内容："></a>页面内容：</h3><pre><code>减少http请求数
+减少dsn查询
+减少重定向
+使用ajax请求
+延迟加载
+预加载
+减少dom元素数量
+划分内容到不同域名
+劲量减少ifame使用
+避免404错误
+</code></pre>
+<h3 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h3><pre><code>使用cdn
+添加expires和cache-control响应头
+启用gzip
+配置etag
+尽早输出缓冲
+ajax请求使用get方法
+避免图片src为空
+</code></pre>
+<h3 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h3><pre><code>减少cookie大小
+静态资源使用cookie域名
+</code></pre>
+<h2 id="下面是一些具体的措施"><a href="#下面是一些具体的措施" class="headerlink" title="下面是一些具体的措施:"></a>下面是一些具体的措施:</h2><h3 id="尽可能减少HTTP请求"><a href="#尽可能减少HTTP请求" class="headerlink" title="尽可能减少HTTP请求:"></a>尽可能减少HTTP请求:</h3><pre><code>网页中的每个内容都是一次http请求获取，请求过多，那么响应就会变慢。所以可以
+图片合并，JavaScript合并，css合并
+</code></pre>
+<h3 id="使用cdn（内容分发网络）"><a href="#使用cdn（内容分发网络）" class="headerlink" title="使用cdn（内容分发网络）"></a>使用cdn（内容分发网络）</h3><pre><code>再离你最近的地方，放置一台性能好链接顺畅的副本服务器，
+让你能够以最近的距离，最快的速度获取内容。
+</code></pre>
+<h3 id="添加expire-cache-control头"><a href="#添加expire-cache-control头" class="headerlink" title="添加expire/cache-control头"></a>添加expire/cache-control头</h3><pre><code>当浏览器发送请求时候，如果nginx返回了一个expire响应头字段。
+资源在本地的过期时间，存在本地。
+Cache-control是http协议中常用的头部之一
+负责控制页面的缓存机制。
+</code></pre>
+<h3 id="启用gzip压缩"><a href="#启用gzip压缩" class="headerlink" title="启用gzip压缩"></a>启用gzip压缩</h3><pre><code>把文件发在服务器压缩后，然后在传输，然后浏览器解压缩。
+将文件变小，减少了流通量。
+</code></pre>
+<h3 id="将css放在页面最上面"><a href="#将css放在页面最上面" class="headerlink" title="将css放在页面最上面"></a>将css放在页面最上面</h3><pre><code>层得样式表单，后面的css,级别更高的css可以重叠前面的。
+css放在后面禁止了网页内容的顺序显示
+避免页面重现空白或者选错的问题，提高浏览器的渲染，需要把css放在前面。
+这样再加载html的时候因为css已经加载完毕，在渲染的时候就不会出现空白或者选错问题。
+</code></pre>
+<h3 id="将script放在页面最下面"><a href="#将script放在页面最下面" class="headerlink" title="将script放在页面最下面"></a>将script放在页面最下面</h3><pre><code>dom加载顺序（读取html-&gt;head-&gt;meta-&gt;title-&gt;style-&gt;link-&gt;script-&gt;body-&gt;div-&gt;img）
+比如你写了一个script死循环，没有放在最后面而是放在body前面，那么后面的内容就显示不出来了。
+</code></pre>
+<h3 id="避免在css中使用expression"><a href="#避免在css中使用expression" class="headerlink" title="避免在css中使用expression"></a>避免在css中使用expression</h3><pre><code>css expression: css表达式 比如:  width: calc(100% - 100px);
+页面显示和缩放，页面滚动，移动鼠标都会导致css expression重新计算
+</code></pre>
+<h3 id="把JavaScript和css放在外部文件中"><a href="#把JavaScript和css放在外部文件中" class="headerlink" title="把JavaScript和css放在外部文件中"></a>把JavaScript和css放在外部文件中</h3><pre><code>// 单独提出-》减少文件体积；提高复用性；可维护性 // 卸载页面里面-》减少请求数；提升页面渲染速度
+比如common.css放在外部。如果不经常访问后者只是应用与一个页面的样式就写在里面或者脚本和样式内容很少。
+</code></pre>
+<h3 id="减少dns查询"><a href="#减少dns查询" class="headerlink" title="减少dns查询"></a>减少dns查询</h3><pre><code>// 再第一次打开www.a.com的时候，必须通过一个机制，将www.a.com转化为10.96.14.1.1de
+的形式，然后dns查找找到www.a.com的位置。
+浏览器会自动缓存，可以减少dns查询，不过缓存时间长，如果www.a.com的地址发生变化就不会即使
+检测到。
+可以使用单域或者多域的方式。
+多域: 图片放在img.a.com, js放在js.a.com, 其他www.a.com
+</code></pre>
+<h3 id="压缩JavaScript和css"><a href="#压缩JavaScript和css" class="headerlink" title="压缩JavaScript和css"></a>压缩JavaScript和css</h3><pre><code>也就是格式化，把js，css压成一坨。
+去除不必要的空白符，格式符，注释符
+减写方法名，参数名。
+</code></pre>
+<h3 id="避免重定向"><a href="#避免重定向" class="headerlink" title="避免重定向"></a>避免重定向</h3><pre><code>原请求被重新转向了其他请求
+301 Moved pearmanently（永久重定向）
+用户请求的页面a.com被移动到了b.com,那么用户会在发送一个请求到b.com
+302 Found（临时重定向）
+用户请求的页面被找到了，但不在原始位置，所以服务器会回复一个新地址。
+增加了浏览器和服务器的往返次数。增加了http请求
+</code></pre>
+<h3 id="移除重复的脚本"><a href="#移除重复的脚本" class="headerlink" title="移除重复的脚本"></a>移除重复的脚本</h3><pre><code>避免因为重复代码导致的页面内容显示错误
+</code></pre>
+<h3 id="配置实体标签"><a href="#配置实体标签" class="headerlink" title="配置实体标签"></a>配置实体标签</h3><pre><code>Etag = entity Tag，属于http协议，受到web服务支持。
+使用特殊的字符串来标识某个请求资源版本
+浏览器请求资源的时候，如果请求字段的Etag和服务器一致，那么资源
+没有改动，返回304 not modified（说明无需再次传输请求的内容，也就是说可以使用缓存的内容）。浏览器使用缓存。
+</code></pre>
+<h3 id="使用ajax缓存"><a href="#使用ajax缓存" class="headerlink" title="使用ajax缓存"></a>使用ajax缓存</h3><pre><code>分批加载和局部更新
+post 每次都执行 不被缓存
+get 同一地址不重复执行， 可以被缓存
+</code></pre>
+<h3 id="减少dom操作"><a href="#减少dom操作" class="headerlink" title="减少dom操作"></a>减少dom操作</h3><pre><code>因为dom操作会引起重排和重绘，同时DOM和js其实是在两个文件，每次都要建立连接
+减少DOM 操作体现为:
+- 如果在一个局部方法中需要多次访问同一个dom，则先暂存它的引用
+- 用querySelectorAll()替代getElementByXX()。
+- 少用HTML集合（类数组）来遍历，因为集合遍历比真数组遍历耗费更高。
+- 用事件委托来减少事件处理器的数量。
+</code></pre>
+<h3 id="减少重排"><a href="#减少重排" class="headerlink" title="减少重排"></a>减少重排</h3><pre><code>- 避免设置大量的style属性
+- 实现元素的动画，它的position属性，最好是设为absoulte或fixed，这样不会影响其他元素的布局,这点主要是体现在触发 BFC 机制上
+- 不要使用table布局，因为table中某个元素旦触发了reflow，那么整个table的元素都会触发reflow。是在要用设置 table-layout:auto; 或者 table-layout:flex;
+</code></pre>
+<h3 id="dns预解析"><a href="#dns预解析" class="headerlink" title="dns预解析"></a>dns预解析</h3><pre><code>如果是http协议开头的页面 a 标签是默认开启dns预解析的, 如果是https协议开头的页面 a 标签是默认关闭dns预解析的
+就使用 &lt;meta http=&#39;x-dnc-prefetch-contorl&#39;&gt; 开启dns预解析 &lt;link rel=&#39;dns-prefetch&#39;&gt;
+</code></pre>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">woyao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://chenwoyao.github.io/2021/05/30/前端笔记/javascript系列/性能优化简述/">https://chenwoyao.github.io/2021/05/30/前端笔记/javascript系列/性能优化简述/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://chenwoyao.github.io">woyao的博客</a>！</span></div></div><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/">前端笔记</a></div><div class="addthis_inline_share_toolbox pull-right"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-607541e3279cfc8b" async></script><nav id="pagination"><div class="next-post pull-right"><a href="/2021/05/24/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/%E6%89%93%E5%8C%85%E7%B3%BB%E5%88%97/%E6%89%93%E5%8C%85%E7%B3%BB%E5%88%97gulp%E9%85%8D%E7%BD%AE%E7%AF%87/"><span>《打包系列|gulp配置篇》</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '428a1dc9101af973234b',
+  clientSecret: 'c3ee519e5e2db3e4e3c0025a9b332dd76f7c29f2',
+  repo: 'ChenWoyao.github.io',
+  owner: 'ChenWoyao',
+  admin: 'ChenWoyao',
+  id: md5(decodeURI(location.pathname)),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2021 By woyao</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.0"></script><script src="/js/fancybox.js?version=1.9.0"></script><script src="/js/sidebar.js?version=1.9.0"></script><script src="/js/copy.js?version=1.9.0"></script><script src="/js/fireworks.js?version=1.9.0"></script><script src="/js/transition.js?version=1.9.0"></script><script src="/js/scroll.js?version=1.9.0"></script><script src="/js/head.js?version=1.9.0"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
