@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="分享，交流，学习，成长"><meta name="keywords" content=""><meta name="author" content="woyao"><meta name="copyright" content="woyao"><title>编程笔记 | woyao的博客</title><link rel="shortcut icon" href="/melody-favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.9.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.0"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.0"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  hexoVersion: '5.4.0'
+} </script><meta name="generator" content="Hexo 5.4.0"></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="切换文章详情">切换站点概览</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%99%BD%E8%AF%9DI-O%E6%93%8D%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">大白话I&#x2F;O操作模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EI-O"><span class="toc-number">1.2.</span> <span class="toc-text">关于I&#x2F;O</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8ENodeJs%E7%9A%84%E5%BC%82%E6%AD%A5-I-O-%E6%93%8D%E4%BD%9C%E5%AE%9E%E6%88%98demo"><span class="toc-number">1.3.</span> <span class="toc-text">关于NodeJs的异步 I&#x2F;O 操作实战demo</span></a></li></ol></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="http://0.gravatar.com/avatar/0e261cd9b93afcd1c13b39d5ba7d6e2d"></div><div class="author-info__name text-center">woyao</div><div class="author-info__description text-center">分享，交流，学习，成长</div><div class="follow-button"><a target="_blank" rel="noopener" href="https://github.com/ChenWoyao">follow me</a></div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">61</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">12</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">8</span></a></div></div></div><div id="content-outer"><div class="plain" id="top-container"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">woyao的博客</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/categories">目录</a><a class="site-page" href="/archives">文章总览</a><a class="site-page" href="/projects">项目实战</a><a class="site-page" href="/tags">标签</a><a class="site-page" href="/about">关于作者</a></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a></span></div></div><div class="layout" id="content-inner"><article id="post"><div class="plain" id="post-title">无题</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2021-06-05</time><span class="post-meta__separator">|</span><span class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">929</span><span class="post-meta__separator">|</span><span>阅读时长: 2 分钟</span></span></div><div class="article-container" id="post-content"><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>==<strong>特别说明:本文只是笔记，有参考和引用</strong>==</p>
+<p><code>Node.js</code>是当前用来构建可扩展的、高效的 <code>REST API&#39;s</code> 的最流行的技术之一。它还可以用来构建混合移动应用、桌面应用甚至用于物联网领域。<br><code>nodeJs</code>是一个运行时，里面内置了<code>c++</code>的文件管理，内存管理，进程调度，硬件设备管理等库。通过<code>javascript</code>这个语言进行解释，为什么要用<code>javascript</code>来作为运行脚本主要的原因是因为<code>javascript</code>是单线程和js的事件循环机制，可以进行高效率的I/O操作。</p>
+<h2 id="大白话I-O操作模式"><a href="#大白话I-O操作模式" class="headerlink" title="大白话I/O操作模式"></a>大白话I/O操作模式</h2><p>**故事标题 **：小明与妹子的邂逅<br>**情节情节 **：小明在校园一次文艺晚会上邂逅了一位妹子，在只得知妹子名字、手机号的情况下，经过几天的苦苦追寻，历经千山万水，终得美人归！<br>**演员介绍 **：男一号@小明、女一号@妹子、串场@门卫大爷</p>
+<blockquote>
+<p>同步阻塞 I / O 模式</p>
+<ul>
+<li>小明电话相约妹子在校门口，然后小明很专一、不见到妹子不回家，期间没有做任何事情，一直在等待！</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>同步非阻塞 I / O 模式</p>
+<ul>
+<li>小明电话相约妹子在校门口，妹子还没准备好（出门前化妆几小时。。。），这时候的小明很执着，每隔一会儿给妹子发个信息直到妹子准备好了。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>I / O 多路复用模式</p>
+<ul>
+<li><p>select 小明电话相约妹子在校门口，委托门卫select大爷帮忙，select大爷很敬业每出去一个人都会进行询问，但是select大爷有个限制最多只能询问1024个。</p>
+</li>
+<li><p>poll poll类似于select功能，不同的是poll大爷没有1024限制，可以一直坚持，但是当poll大爷超过1024，询问的越来越多之后就显得越来越精疲力尽了。</p>
+</li>
+<li><p>epoll 小明电话相约妹子在校门口，委托门卫epoll大爷帮忙，epoll大爷不在是每个询问，规定每个人出入校门必须带上学生证，这样opoll大爷就是知道哪个是小明的女神了，epoll大爷找到女神之后在电话通知小明。</p>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>信号驱动 I / O 模式</p>
+<ul>
+<li>小明电话相约妹子在校门口，此时妹子回复说我还没准备好（出门前化妆几小时。。。），这个时候小明也没去，而是先去干其它事情了，等妹子准备好之后电话通知小明，我已经准备好了，小明这个时候才去校门口等着和妹子的约会。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>异步 I / O 模式</p>
+<ul>
+<li>小明告诉妹子我们在校园门口相约，之后小明没有在那干等了，而是先回宿舍休息会或者和朋友在打会球等等，妹子到校门口之后电话通知小明，我已经来啦。</li>
+</ul>
+</blockquote>
+<h2 id="关于I-O"><a href="#关于I-O" class="headerlink" title="关于I/O"></a>关于I/O</h2><p><code>I/O</code> 也是一个很宽泛的词，每个设备都会有一个专用的 <code>I/O</code> 地址，用来处理自己的输入输出信息。对于服务端研发的童鞋相信 网络 <code>I/O</code>、磁盘 <code>I/O </code>这些词，也需并不陌生，一次 API 接口调用、向磁盘写入日志信息，其实就是在跟 <code>I/O </code>打交道。一次 <code>I/O </code>操作分为等待资源、使用资源两个阶段<br><strong>关于<code>I/O</code>多路复用:</strong>  这里的<code>I/O</code>通常指<code>网络I/O</code>，多路指多个Socket链接，复用指操作系统进行运算调度的最小单位线程</p>
+<h2 id="关于NodeJs的异步-I-O-操作实战demo"><a href="#关于NodeJs的异步-I-O-操作实战demo" class="headerlink" title="关于NodeJs的异步 I/O 操作实战demo"></a>关于NodeJs的异步 I/O 操作实战demo</h2><p><a target="_blank" rel="noopener" href="https://www.nodejs.red/#/nodejs/translate/everything-you-need-to-know-about-node-js-lnc">请看此文</a></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">woyao</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://chenwoyao.github.io/2021/06/05/前端笔记/NodeJs系列/关于nodejs/">https://chenwoyao.github.io/2021/06/05/前端笔记/NodeJs系列/关于nodejs/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://chenwoyao.github.io">woyao的博客</a>！</span></div></div><div class="post-meta__tag-list"></div><div class="addthis_inline_share_toolbox pull-right"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-607541e3279cfc8b" async></script><nav id="pagination"><div class="prev-post pull-left"><a href="/2021/06/05/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/javascript%E7%B3%BB%E5%88%97/js%E4%B8%AD%E4%B8%80%E4%BA%9Bapi%E5%AE%9E%E7%8E%B0/"><i class="fa fa-chevron-left">  </i><span></span></a></div><div class="next-post pull-right"><a href="/2021/05/30/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/javascript%E7%B3%BB%E5%88%97/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96%E7%AE%80%E8%BF%B0/"><span>性能优化简述</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '428a1dc9101af973234b',
+  clientSecret: 'c3ee519e5e2db3e4e3c0025a9b332dd76f7c29f2',
+  repo: 'ChenWoyao.github.io',
+  owner: 'ChenWoyao',
+  admin: 'ChenWoyao',
+  id: md5(decodeURI(location.pathname)),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2021 By woyao</div><div class="framework-info"><span>驱动 - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.9.0"></script><script src="/js/fancybox.js?version=1.9.0"></script><script src="/js/sidebar.js?version=1.9.0"></script><script src="/js/copy.js?version=1.9.0"></script><script src="/js/fireworks.js?version=1.9.0"></script><script src="/js/transition.js?version=1.9.0"></script><script src="/js/scroll.js?version=1.9.0"></script><script src="/js/head.js?version=1.9.0"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
